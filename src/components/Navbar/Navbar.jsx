@@ -1,13 +1,31 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import search from '../../assets/search_icon.svg'
 import bell from '../../assets/bell_icon.svg'
 import profile from '../../assets/profile_img.png'
 import caret from '../../assets/caret.svg'
+
 const Navbar = () => {
+  const [background, setBackground] = useState('transparent')
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setBackground('rgb(20, 20, 20)')
+    } else {
+      setBackground('transparent')
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [])
+
   return (
-    <div className='navbar'>
+    <div className='navbar' style={{ backgroundColor: background }}>
       <div className="navbar-left">
         <img src={logo} alt="" />
         <ul>
