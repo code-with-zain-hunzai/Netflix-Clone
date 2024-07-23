@@ -74,14 +74,37 @@
     width: 18px;
     height: 18px;
 }
-.form-switch{
+
+.form-switch {
     margin-top: 40px;
-    color: #737373 ;
+    color: #737373;
 }
 
-.form-switch span{
-     margin-left: 6px;
-     color: #fff;
-     font-weight: 500;
-     cursor: pointer;
+.form-switch span {
+    margin-left: 6px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.login-spin {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-spin img {
+    width: 60px;
+}
+
+@media (max-width:500px){
+    .login{
+        padding: 15px 5%;
+    }
+    .login-form{
+        padding: 20px ;
+        margin-top: 30px;
+    }
 }
