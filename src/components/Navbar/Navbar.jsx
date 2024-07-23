@@ -5,6 +5,7 @@ import search from '../../assets/search_icon.svg'
 import bell from '../../assets/bell_icon.svg'
 import profile from '../../assets/profile_img.png'
 import caret from '../../assets/caret.svg'
+import { logout } from '../../firebase'
 
 const Navbar = () => {
   const [background, setBackground] = useState('transparent')
@@ -45,7 +46,7 @@ const Navbar = () => {
           <img src={profile} className='profile' alt="profile" />
           <img src={caret} alt="caret" />
           <div className="dropdown">
-            <p>Sign Out Of Netflix</p>
+            <p onClick={() => {logout()}}>Sign Out Of Netflix</p>
           </div>
         </div>
       </div>
