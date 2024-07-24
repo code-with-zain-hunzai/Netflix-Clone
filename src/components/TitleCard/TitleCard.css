@@ -34,3 +34,36 @@
     text-decoration: none;
     color: #fff;
 }
+
+@media (max-width:800px) {
+    .title-Card {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .title-Card h2 {
+        font-size: 20px;
+    }
+
+    .card-list img {
+        width: 200px;
+    }
+
+    .card-list p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:800px) {
+    .title-Card h2 {
+        font-size: 15px;
+    }
+
+    .card-list img {
+        width: 165px;
+    }
+
+    .card-list p {
+        font-size: 10px;
+    }
+}

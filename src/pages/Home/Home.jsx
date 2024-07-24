@@ -14,7 +14,7 @@ const Home = () => {
       <div className="hero">
         <img src={hero} alt="" className='hero-img' />
         <div className="hero-caption">
-          <img src={hero_title} alt="" className='hero-title' />
+          <img src={hero_title} alt="" className='caption-img' />
           <p>Discovering his ties to a secret ancient order, a young man living in modern Istanbul embarks on a quest to save the city from an immortal enemt.</p>
           <div className="hero-btns">
             <button className='btn'><img src={play} alt="play" />Play</button>

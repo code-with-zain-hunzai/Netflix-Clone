@@ -67,3 +67,53 @@
 .more-cards {
     padding-left: 6%;
 }
+
+@media (max-width:1024px) {
+    .hero-caption .title-Card {
+        display: none;
+    }
+
+    .hero-btns {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:800px) {
+    .hero-caption {
+        padding: 4%;
+    }
+
+    .caption-img {
+        margin-bottom: 10px;
+        width: 40%;
+    }
+
+    .hero-caption p {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .hero-btns .btn img {
+        width: 20px;
+    }
+
+    .more-cards {
+        padding-left: 4%;
+    }
+}
+
+@media (max-width:500px) {
+    .caption-img {
+        display: none;
+    }
+
+    .hero-btns .btn img {
+        width: 15px;
+    }
+
+    .hero-btns .btn {
+        padding: 4px 10px;
+        gap: 5px;
+        font-size: 10px;
+    }
+}

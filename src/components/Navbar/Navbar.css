@@ -77,3 +77,27 @@
 .navbar-profile:hover .dropdown {
     display: flex;
 }
+
+@media (max-width:1050px) {
+    .navbar {
+        padding: 20px 4%;
+    }
+
+    .navbar-left ul {
+        display: none;
+    }
+
+    .navbar img {
+        height: 25px;
+    }
+}
+
+@media (max-width:500px) {
+    .navbar img {
+        height: 20px;
+    }
+
+    .navbar-right {
+        gap: 10px;
+    }
+}
